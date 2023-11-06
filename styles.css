@@ -1,0 +1,171 @@
+:root {
+  /* Primary Colors*/
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --active-botton: hsla(245, 75%, 52%, 0.8);
+  /* Neutral */
+  --Very-pale-blue: hsl(228, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1rem;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Red Hat Display', sans-serif;
+  }
+.wrapper {
+    width: 21em;
+    max-width: 25em;
+    border-radius: 1rem;
+    background-color: var(--Very-pale-blue);
+    margin:  1em 0;
+    text-align: center;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+main {
+    margin: 0 10px;
+  }
+.main-img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.Order-Summary{
+  font-weight: 900;
+  margin-bottom: 0em;
+  color: var(--Dark-blue);
+}
+
+.Order-Summary-text{
+  line-height: 1.5;  
+  font-weight: 500;
+}
+
+p, h2 {
+  margin: 1em;
+    
+}
+p {
+  color: var(--Desaturated-blue);
+}
+h2 {
+  font-weight: bolder;
+}
+p, a {
+  font-size: 0.9rem;
+}
+a {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.plan {    
+  margin: 1.5em 0.8em 1.1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.25em;
+  background-color: hsla(225, 100%, 94%, 0.27);
+  border-radius: 0.5em;
+}
+
+.plan-details {
+  padding: 0.2rem;
+  text-align: left;
+  margin-right: 1.5em;
+  line-height: 0.3;  
+}
+
+.plan-text, .plan-price {
+  margin-left: 0;
+}
+.plan h2 {
+  font-size: 0.9rem;
+}
+.plan a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.confirmation-botton {
+  margin: 1.2em 0.9em 0;
+  padding: 0.9em 0;
+  border-radius: 0.7em;
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  font-size: 1rem;
+  box-shadow: -5px 12px 10px rgba(25, 25, 27, 0), -4px 12px 10px  hsla(0, 0%, 0%, 00.1);
+}
+
+.confirmation-botton:hover {
+  cursor: pointer;
+  background-color:var(--active-botton);
+}
+
+.confirmation-cancel {
+  margin: 1.6em 0 2.1em;
+  font-weight: 900;
+}
+
+.confirmation-cancel:hover {
+  cursor: pointer;
+  color: hsla(223, 47%, 23%, 0.9);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+    
+  }
+
+  .wrapper {
+    width: 25rem;
+  }
+  main  p {
+    margin: 0.9em 2em 1.6em;
+  }
+
+  .Order-Summary {
+    margin: 1.3em 0 0;
+  }
+  .plan {
+    margin: 0 1.6em 1.3em;
+  }
+  .plan-details {
+    padding: 0.2rem;
+    margin-right: 3em;
+  }
+
+  .confirmation-botton {
+    margin: 1.2em 1.6em 0;
+    padding: 0.8em;
+    font-size: 0.95rem;
+  }
+
+  .confirmation h2{
+    
+  }
+  
+  .confirmation-cancel {
+    margin: 1.5em 0 2.7em;
+  }
+  p, h2 {
+    margin: 1.1em;
+  }
+}    
