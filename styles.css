@@ -24,6 +24,9 @@ body {
     font-size: 1rem;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     font-family: 'Red Hat Display', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
   }
 .wrapper {
     width: 21em;
@@ -34,12 +37,12 @@ body {
     text-align: center;
   }
 
-.centered {
+/* .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+  } */
 main {
     margin: 0 10px;
   }
